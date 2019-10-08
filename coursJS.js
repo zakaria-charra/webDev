@@ -32,9 +32,84 @@ switch(op){
 
  alert(Somme("lol",3));*/
 
- let f= function(a,b){
+ /*let f= function(a,b){
  	
  	console.log(a+b);
  };
 
- f(1,u);
+ f(1,11);*/
+
+/* function decompt(n){
+
+ 	if(n>0){
+ 		console.log(n);return decompt(n-1);}
+
+ 		
+ };
+
+
+decompt(5);*/
+function Vecteur(x,y){
+
+	this.x=x;
+	this.y = y;
+
+};
+Vecteur.prototype.mod= function(){
+
+	return Math.sqrt(this.x**2+this.y**2);
+}
+Vecteur.prototype.equals=function(v){
+if(this.x==v.x && this.y==v.y)
+	return true;
+else return false;
+
+}
+let v1= new Vecteur(2,2);
+let v2= new Vecteur(3,2);
+
+console.log(v1.mod());
+console.log(v1.equals(v2));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
