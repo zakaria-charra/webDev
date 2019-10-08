@@ -49,7 +49,7 @@ switch(op){
 
 
 decompt(5);*/
-function Vecteur(x,y){
+/*function Vecteur(x,y){
 
 	this.x=x;
 	this.y = y;
@@ -68,6 +68,27 @@ else return false;
 let v1= new Vecteur(2,2);
 let v2= new Vecteur(3,2);
 
+console.log(v1.mod());
+console.log(v1.equals(v2));*/
+
+
+class vect {
+	constructor (x,y){
+		this.x=x;
+	    this.y = y;
+	}
+
+	mod(){
+		return Math.sqrt(this.x**2+this.y**2);
+	}
+	equals(v){
+		if(this.x==v.x && this.y==v.y)
+		return true;
+		else return false;
+	}
+}
+let v1=new vect(2,3);
+let v2=new vect(5,3);
 console.log(v1.mod());
 console.log(v1.equals(v2));
 
