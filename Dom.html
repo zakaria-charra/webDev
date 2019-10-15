@@ -2,16 +2,24 @@
 <html>
 <head>
 	<title></title>
+	<style type="text/css">
+		.normal{ color: blue; }
+		.colored{  font-size:128px; }
+	</style>
 </head>
 <body>
-	<div id="div1">
+<!--	<div id="div1">
 		<h1> hello</h1> 
 	</div>
-	<div class="QS"> html </div>
+	<div class="QS kj"> html </div>
 	<div class="QS"> css </div>
 	<div class="QS">js </div>
 	<img id="img1"src=""/>
 
+-->
+<p class="normal" id="p1">
+	HEY
+	</p>
 <script>
 	//alert(document.getElementById("div1").innerHTML);
 	//alert(document.querySelector(".QS").innerHTML);
@@ -20,16 +28,19 @@ for( var i=0;i<qsa.length;i++)
 {alert(qsa[i].innerHTML);}*/
 
 
-alert(document.getElementById("div1").outerHTML);
+//alert(document.getElementById("div1").outerHTML);
 
 //document.getElementById("div1").innerHTML="<h1>Zakaria1</h1>"
 
 
 	//var qs=document.querySelectorAll(".QS");
-	//alert(qs[1].classList);
+	//alert(qs[0].className);
 
 	//document.getElementById("img1").src="im1.jpg";
 //document.getElementById("img1").setAttribute("src","im1.jpg");
+//document.getElementById("p1").classList.add("colored");
+document.getElementById("p1").className="colored";
+
 </script>
 </body>
 </html>
