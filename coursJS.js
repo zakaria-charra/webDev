@@ -70,7 +70,7 @@ let v2= new Vecteur(3,2);
 
 console.log(v1.mod());
 console.log(v1.equals(v2));*/
-
+/*
 
 class vect {
 	constructor (x,y){
@@ -91,8 +91,15 @@ let v1=new vect(2,3);
 let v2=new vect(5,3);
 console.log(v1.mod());
 console.log(v1.equals(v2));
+*/
+const elt=document.querySelector(".normal");
 
+function eventclbk(e){
+	console.log("clicked");
+	elt.classList.toggle("normal");
 
+}
+elt.onclick = eventclbk;
 
 
 
