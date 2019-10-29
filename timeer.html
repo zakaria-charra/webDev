@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+	<header> Typing Test </header>
+	<textarea>
+		
+	</textarea>
+
+<span id="min"></span>:
+<span id="sec"></span> :
+<span id="mili"></span>
+
+<script type="text/javascript">
+	var sec=0;
+	var min=0;
+	var mili=0;
+
+	 setInterval(function(){
+	 	sec++; 
+	 	if(sec>=60) sec=0;
+	 	document.getElementById("sec").innerHTML=+sec;
+	 	 },1000);
+
+
+	 setInterval(function(){min++; document.getElementById("min").innerHTML=+min; },1000*60);
+
+
+
+	 setInterval(function(){
+	 mili++;
+	 if(mili>=10) mili=0;
+	  document.getElementById("mili").innerHTML=+mili;
+	   },100);
+
+	
+
+</script>
+</body>
+</html>
