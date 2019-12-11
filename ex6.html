@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	
+	const x=Number.parseInt(Math.random()*100);
+	var compteur=1;
+	var y=false;
+	var rep;
+	//
+	alert(x);
+
+	do{
+		rep=Number.parseInt(prompt("devinez la valeur de x "));
+		if( rep==x)
+		{
+			alert ( " vous avez trouvé l reponse en "+ `${compteur}`+" coups");
+			y=true;
+		}
+		else {
+
+					if(rep>x)	 alert( " x est plus petit que le nombre que vous avez donné ");
+					else alert( " x est plus grand que le nombre que vous avez donné ")		;
+					compteur++;
+		}
+
+
+	}
+	while(y==false)
+
+</script>
+</body>
+</html>

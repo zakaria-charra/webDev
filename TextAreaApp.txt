@@ -1,0 +1,43 @@
+import React, {Component} from 'react'
+import ReactDOM from 'react-dom'
+import textval from './textval'
+import marked from 'marked'
+import Title from './Components/Title'
+
+class App extends Component {
+  state = {
+    text: textval,
+  }
+  changeHandler = e => {
+    const text = e.target.value
+    this.setState({text: text})
+  }
+  getMarkdownText(text) {
+    var rawMarkup = marked(text, {sanitize: true})
+    return {__html: rawMarkup}
+  }
+  render() {
+    return (
+      <div className="container">
+        <Title />
+
+        <div className="row">
+          <div className="col-sm-6">
+            <textarea
+              onChange={e => this.changeHandler(e)}
+              value={this.state.text}
+              rows={10}
+              className="form-control"
+            />
+          </div>
+          <div
+            className="col-sm-6"
+            dangerouslySetInnerHTML={this.getMarkdownText(this.state.text)}
+          />
+        </div>
+      </div>
+    )
+  }
+}
+
+ReactDOM.render(<App />, document.getElementById('root'))

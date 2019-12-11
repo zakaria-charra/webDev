@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h3 > Type des variable avant</h3>
+<p id="p1"></p>
+<h3 > Type des variable apres</h3>
+<p id="p2"></p>
+</body>
+<script type="text/javascript">
+	let a= "1";
+	let b="2";
+	c=a+b;
+	document.getElementById ('p1').innerHTML="type de a est :"+ `${typeof a }`+ " type de b est :"+ `${typeof b }`+" type de c est :"+ `${typeof c }`;
+	
+	a=Number.parseInt(a);
+	b=Number.parseInt(b);
+	c=a+b;
+	document.getElementById ('p2').innerHTML="type de a est :"+ `${typeof a }`+ " type de b est :"+ `${typeof b }`+" type de c est :"+ `${typeof c }`;
+	
+
+
+</script>
+
+
+</body>
+</html>

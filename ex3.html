@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+
+	function valider(){
+
+		if(document.getElementById("input1").value=="")
+		{
+		document.getElementById("err").innerHTML="<h1 > champs obligatoire</h1>";
+		return false;
+		}
+			
+		else return true ;
+		}
+
+</script>
+<form id= "f1" method="GET" onsubmit="return valider()">
+	<input type="text" name="" id="input1"><p id="err"></p>
+	<input type="submit" name="" value="valider">
+</form>
+
+</body>
+</html>
