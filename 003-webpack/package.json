@@ -9,8 +9,8 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "babel-loader": "^8.0.6",
-    "webpack": "^4.41.2",
+    "babel-loader": "^8.3.0",
+    "webpack": "^5.75.0",
     "webpack-dev-server": "^3.9.0"
   }
 }
